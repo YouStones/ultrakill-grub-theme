@@ -56,7 +56,7 @@ if [[ -e /etc/os-release ]]; then
 fi
 
 echo 'Creating GRUB themes directory'
-sudo rm -r -p /boot/${GRUB_DIR}/themes/${GRUB_THEME}
+sudo rm -r /boot/${GRUB_DIR}/themes/${GRUB_THEME}
 
 echo 'Removing other themes from GRUB config'
 sudo sed -i '/^GRUB_THEME=/d' /etc/default/grub
